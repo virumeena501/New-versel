@@ -1,99 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Number Prediction King</title>
 
-<!-- ✅ META PIXEL CODE -->
+<title>Official Community</title>
+
+<meta name="description"
+content="Join our official community for regular updates, useful resources, and important information.">
+
+<meta name="robots" content="index, follow">
+
+<!-- =========================
+     META PIXEL
+========================= -->
 <script>
 !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+{
+  if(f.fbq)return;
+
+  n=f.fbq=function(){
+    n.callMethod ?
+    n.callMethod.apply(n,arguments) :
+    n.queue.push(arguments)
+  };
+
+  if(!f._fbq)f._fbq=n;
+
+  n.push=n;
+  n.loaded=true;
+  n.version='2.0';
+  n.queue=[];
+
+  t=b.createElement(e);
+  t.async=true;
+  t.src=v;
+
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)
+}
+(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '903613209027442'); // 👉 yaha apna Pixel ID daal
+/* SAME PIXEL ID EVERYWHERE */
+fbq('init', '28442935198644809');
+
+/* PageView ONLY */
 fbq('track', 'PageView');
 </script>
 
 <noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+<img
+  height="1"
+  width="1"
+  style="display:none"
+  src="https://www.facebook.com/tr?id=28442935198644809&ev=PageView&noscript=1"
+/>
 </noscript>
-<!-- ✅ END PIXEL -->
 
+<!-- =========================
+     STYLE
+========================= -->
 <style>
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 0;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #0a1a3a, #020617);
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+
+  background:
+    radial-gradient(circle at top, #123746 0%, #061923 45%, #020b11 100%);
+
+  color: white;
+  text-align: center;
 }
 
 .container {
-  width: 90%;
-  max-width: 380px;
-  background: linear-gradient(180deg, #0b1f4b, #07122a);
-  border-radius: 20px;
-  padding: 25px;
-  text-align: center;
-  box-shadow: 0 0 40px rgba(0,255,255,0.2);
+  padding: 45px 18px;
 }
 
-.title {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.card {
+  width: 100%;
+  max-width: 400px;
+
+  margin: auto;
+  padding: 28px 22px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.06);
+
+  border: 1px solid rgba(0,198,255,0.15);
+
+  box-shadow:
+    0 0 30px rgba(0,198,255,0.12);
+
+  backdrop-filter: blur(12px);
 }
 
-.subtitle {
-  color: #b0c4de;
-  font-size: 14px;
-  margin-bottom: 20px;
+h1 {
+  margin: 8px 0 18px;
+
+  font-size: 29px;
+  line-height: 1.2;
 }
 
-.list {
+.description {
+  color: #bfc8cd;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  margin-bottom: 25px;
+}
+
+.features {
   text-align: left;
-  font-size: 14px;
-  line-height: 1.8;
+
+  margin: 20px 0;
+  padding: 18px;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.05);
+
+  color: #d8dfe2;
+
+  line-height: 2;
 }
 
-.list span {
-  display: block;
+.feature {
+  margin: 2px 0;
 }
 
-.btn {
-  margin-top: 25px;
-  display: inline-block;
-  background: linear-gradient(90deg, #00ff7f, #00cc66);
-  padding: 14px 25px;
-  border-radius: 30px;
-  color: #000;
+.check {
+  color: #00d9ff;
   font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 0 20px rgba(0,255,127,0.6);
-  transition: 0.3s;
 }
 
-.btn:hover {
-  transform: scale(1.05);
+.join-btn {
+  width: 100%;
+
+  border: none;
+
+  padding: 16px 20px;
+
+  border-radius: 30px;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  color: #001018;
+
+  background:
+    linear-gradient(90deg, #00c6ff, #0072ff);
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 20px rgba(0,114,255,0.25);
+
+  transition: transform 0.2s;
+}
+
+.join-btn:active {
+  transform: scale(0.97);
+}
+
+.join-btn:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.notice {
+  margin-top: 18px;
+
+  color: #aeb8bd;
+
+  font-size: 13px;
 }
 
 .footer {
-  margin-top: 15px;
+  margin-top: 28px;
+
+  color: #858f94;
+
   font-size: 12px;
-  color: #aaa;
+
+  line-height: 1.6;
 }
+
 </style>
 
 </head>
@@ -102,33 +203,121 @@ body {
 
 <div class="container">
 
-  <div class="title">🚀 NUMBER PREDICTION KING</div>
-  <div class="subtitle">Join Telegram & Start Earning Daily Profit</div>
+  <div class="card">
 
-  <div class="list">
-    <span>✅ 90%+ Accurate Signals</span>
-    <span>⚡ Instant Entry & Exit Alerts</span>
-    <span>📈 Daily Profit Opportunities</span>
-    <span>🧠 Beginner Friendly Guidance</span>
-    <span>💬 24/7 Support Available</span>
-  </div>
+    <h1>
+      VIP NUMBER PREDICTIONS
+    </h1>
 
-  <!-- ✅ BUTTON WITH TRACKING -->
-  <a href="https://t.me/+4O2gUp7B91ZhNzk1" class="btn" onclick="trackJoin()">
-    🔥 Join Telegram Now
-  </a>
+    <p class="description">
+      Stay updated with the latest information,
+      helpful resources, and important community
+      updates in one place.
+    </p>
 
-  <div class="footer">
-    Limited Seats • Join Fast ⏳
+    <div class="features">
+
+      <div class="feature">
+        <span class="check">✔</span>
+        Regular Updates
+      </div>
+
+      <div class="feature">
+        <span class="check">✔</span>
+        Helpful Resources
+      </div>
+
+      <div class="feature">
+        <span class="check">✔</span>
+        Active Community
+      </div>
+
+    </div>
+
+    <!--
+      IMPORTANT:
+      Telegram link is opened by JavaScript
+      only after the user actually clicks.
+    -->
+
+    <button
+      id="joinButton"
+      class="join-btn"
+      type="button">
+
+      Access Community
+
+    </button>
+
+    <div class="notice">
+      Limited Access – For community members
+    </div>
+
+    <div class="footer">
+
+      This page is for informational purposes only.<br>
+
+      We are not affiliated with any official organization.
+
+    </div>
+
   </div>
 
 </div>
 
-<!-- ✅ BUTTON CLICK TRACKING -->
+
+<!-- =========================
+     BUTTON TRACKING
+========================= -->
+
 <script>
-function trackJoin() {
-  fbq('track', 'Lead'); // ya 'CompleteRegistration' bhi use kar sakte ho
-}
+
+const joinButton = document.getElementById("joinButton");
+
+let leadSent = false;
+
+joinButton.addEventListener("click", function () {
+
+  /*
+    Prevent multiple clicks from generating
+    multiple Lead events.
+  */
+  if (leadSent) {
+    return;
+  }
+
+  leadSent = true;
+
+  joinButton.disabled = true;
+  joinButton.innerText = "Opening Community...";
+
+
+  /*
+    Send Lead ONLY after the user
+    physically clicks the button.
+  */
+
+  fbq('track', 'Lead', {
+    content_name: 'Community Join',
+    value: 1,
+    currency: 'INR'
+  });
+
+
+  /*
+    Small delay gives the browser time
+    to send the Meta event before Telegram opens.
+  */
+
+  setTimeout(function () {
+
+    window.location.href =
+      "https://t.me/+5S2edAhAzXFjOGM1";
+
+  }, 700);
+
+});
+
 </script>
 
 </body>
